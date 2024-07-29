@@ -1,7 +1,8 @@
 <template>
     <v-container>
         <v-row>
-            <v-col cols="12" md="6">
+            <!-- change from md to sm -->
+            <v-col cols="12" sm="6">
                 <v-sheet 
                 class="pt-4 pl-4"
                 height="500"
@@ -9,14 +10,13 @@
                 <About />
             </v-sheet>
             </v-col>
-            <v-col cols="12" md="6">
+            <v-col cols="12" sm="6">
                 <v-sheet
                  
                  class="pa-4"
                  >
                  <v-row align="center" justify="center" class="mb-4 mt-3">
                     <v-icon size="100">mdi-account</v-icon>
-        
                  </v-row>
                 
                 <v-row
@@ -25,7 +25,6 @@
                     <h1 class="text-h3">Login</h1>
                 </v-row>
                
-                
             
                  <v-text-field
                     label="E-mail"
@@ -37,7 +36,7 @@
                 <v-text-field
                     label="Password"
                     prepend-inner-icon="mdi-lock"
-                    :append-inner-icon="visible ? 'mdi-eye-off': 'mdi-eye'"
+                    :append-inner-icon="visible ? 'mdi-eye': 'mdi-eye-off'"
                     :type="visible ? 'text': 'Password'"
                     variant="outlined"
                     class="ml-5 mr-5"
