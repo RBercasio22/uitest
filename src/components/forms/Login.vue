@@ -20,7 +20,7 @@
                  </v-row>
                 
                 <v-row
-                class="mb-5 ml-5"
+                class="mb-3 ml-5"
                 >
                     <h1 class="text-h3">Login</h1>
                 </v-row>
