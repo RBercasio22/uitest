@@ -22,7 +22,10 @@
                 <v-row
                 class="mb-3 ml-5"
                 >
-                    <h1 class="text-h3">Login</h1>
+
+                    <h1 class="text-h2">Login        
+                    </h1>
+                   
                 </v-row>
                 <!-- USER LOGIN -->
                  <v-text-field
@@ -43,12 +46,11 @@
                 >
                 </v-text-field>
 
-
                 <!-- REMEMBER PASSWORD CHECKBOX -->
                  <v-row>
                     <v-col cols="12">
                         <v-row
-                         class="ml-2"
+                         class="ml-3"
                         align="center"
                         justify="start">
                         <v-checkbox 
@@ -99,7 +101,9 @@
                   align="center" 
                   justify="end" 
                   >
-                     <v-btn color="red">LOGIN</v-btn>
+                     <v-btn 
+                     prepend-icon="mdi-login"
+                     color="red">LOGIN</v-btn>
                  </v-row>
 
                  <!-- V-SHEET END -->
@@ -117,6 +121,18 @@
   cursor: pointer;
 }
 
+/* .div-container {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
+}
+@media (max-width: 600px) {
+    .div-container {
+        flex-direction: column;
+    }
+
+
+} */
 
 </style>
 
