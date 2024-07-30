@@ -11,6 +11,7 @@
             </v-sheet>
             </v-col>
             <v-col cols="12" sm="6">
+                 <!-- V-SHEET START -->
                 <v-sheet
                  class="pa-4"
                  >
@@ -23,8 +24,7 @@
                 >
                     <h1 class="text-h3">Login</h1>
                 </v-row>
-               
-            
+                <!-- USER LOGIN -->
                  <v-text-field
                     label="E-mail"
                     prepend-inner-icon="mdi-email"
@@ -41,22 +41,26 @@
                     class="ml-5 mr-5"
                     @click:append-inner="visible = !visible"
                 >
-            
                 </v-text-field>
+
+
+                <!-- REMEMBER PASSWORD CHECKBOX -->
                  <v-row>
                     <v-col cols="6" sm="6">
-              
                         <v-row
-                        class="ma-5"
+                         class="ml-2"
                         align="center"
                         justify="start">
-                        <v-checkbox label="Remember Me"></v-checkbox>
+                        <v-checkbox 
+                        class="text-caption text--small text--md"
+                        label="Remember Me"></v-checkbox>
                         </v-row>
-                  
-                    </v-col>    
+                    </v-col> 
+
+                    <!-- FORGOT PASSWORD LINK -->
                     <v-col cols="6" sm="6">
                     <v-row
-                        class="ma-5 pt-4"
+                        class="mr-5 pt-4"
                         align="center"
                         justify="end"
                         >
@@ -81,7 +85,7 @@
                      <v-btn color="red">LOGIN</v-btn>
                  </v-row>
 
-            
+                 <!-- V-SHEET END -->
                 </v-sheet>  
                 
             </v-col>
@@ -95,6 +99,17 @@
 .cursor-pointer {
   cursor: pointer;
 }
+
+.remember-me-checkbox .v-label {
+  font-size: 14px; /* Default size */
+}
+
+@media (max-width: 600px) {
+  .remember-me-checkbox .v-label {
+    font-size: 12px; /* Smaller size for mobile view */
+  }
+}
+
 
 </style>
 
