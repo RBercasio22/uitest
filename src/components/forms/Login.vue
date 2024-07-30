@@ -12,8 +12,10 @@
             </v-col>
             <v-col cols="12" sm="6">
                  <!-- V-SHEET START -->
-                <v-sheet
-                 class="pa-4"
+                <v-card
+                 class="pa-4 mx-auto"
+                 height="550"
+                
                  >
                  <v-row align="center" justify="center" class="mb-4 mt-3">
                     <v-icon size="100">mdi-account</v-icon>
@@ -107,7 +109,7 @@
                  </v-row>
 
                  <!-- V-SHEET END -->
-                </v-sheet>  
+                </v-card>  
                 
             </v-col>
         </v-row>

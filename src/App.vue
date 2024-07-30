@@ -7,7 +7,7 @@
      v-model="drawer"
 
     >
-  
+           
     </v-navigation-drawer>
    -->
     <v-app-bar color="red">
@@ -16,8 +16,16 @@
       <v-app-bar-title class="text-h6 text-{breakpoint}-{sm,nd,lg,xl}" style="color: white">
         <v-icon size="50">mdi-broadcast</v-icon>
       </v-app-bar-title>
-      <v-btn active color="white">LOGIN</v-btn>
-      <v-btn color="white">SIGNUP</v-btn>
+      <v-btn 
+      active 
+      color="white"
+       to="/"
+      >LOGIN
+      </v-btn>
+      <v-btn
+       color="white"
+       to="/signup"
+       >SIGNUP</v-btn>
       
     
       <!-- <v-btn @click="toggleTheme">
@@ -43,10 +51,10 @@
 
     <v-main>
       <!--  -->
-      <!-- <router-view /> -->
+      <router-view />
 
       <!-- <HelloWorld /> -->
-       <Login />
+       <!-- <Login /> -->
      
     </v-main>
   </v-app>

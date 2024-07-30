@@ -3,8 +3,9 @@
 
 Task 07/30/2024
 Implement a Light and Dark theme - DONE
+Add a route of login and signup form - DONE
 Add a remember me function to save user login -
-Add a route of login and signup form - 
+
 
 
 
