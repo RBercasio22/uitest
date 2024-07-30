@@ -46,7 +46,7 @@
 
                 <!-- REMEMBER PASSWORD CHECKBOX -->
                  <v-row>
-                    <v-col cols="6" sm="6">
+                    <v-col cols="12">
                         <v-row
                          class="ml-2"
                         align="center"
@@ -54,13 +54,27 @@
                         <v-checkbox 
                         class="text-caption text--small text--md"
                         label="Remember Me"></v-checkbox>
+                            <!-- NESTED V_ROW START -->
+                            <v-row 
+                            class="mr-5"
+                            justify="end">
+                                <a
+                                class="text-caption text-decoration-none text-red"
+                                href="#"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                >
+                                Forgot login password?
+                                </a>
+                            </v-row>
+                            <!-- NESTED V_ROW END -->
                         </v-row>
                     </v-col> 
 
                     <!-- FORGOT PASSWORD LINK -->
-                    <v-col cols="6" sm="6">
+                    <!-- <v-col cols="6" sm="6">
                     <v-row
-                        class="mr-5 pt-4"
+                        class="mr-4 pt-4"
                         align="center"
                         justify="end"
                         >
@@ -74,7 +88,7 @@
                         </a>
             
                     </v-row>
-                    </v-col>  
+                    </v-col>   -->
                  </v-row>
 
                  <v-row 
@@ -99,17 +113,6 @@
 .cursor-pointer {
   cursor: pointer;
 }
-
-.remember-me-checkbox .v-label {
-  font-size: 14px; /* Default size */
-}
-
-@media (max-width: 600px) {
-  .remember-me-checkbox .v-label {
-    font-size: 12px; /* Smaller size for mobile view */
-  }
-}
-
 
 </style>
 
