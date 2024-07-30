@@ -17,6 +17,6 @@ h1,p {
 }
 .container {
     overflow-y: auto;
-    height: 500px;
+    height: 100%;
 }
 </style>

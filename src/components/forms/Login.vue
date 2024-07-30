@@ -5,14 +5,13 @@
             <v-col cols="12" sm="6">
                 <v-sheet 
                 class="pt-4 pl-4"
-                height="500"
+                height="550"
                 >
                 <About />
             </v-sheet>
             </v-col>
             <v-col cols="12" sm="6">
                 <v-sheet
-                 
                  class="pa-4"
                  >
                  <v-row align="center" justify="center" class="mb-4 mt-3">
@@ -45,7 +44,7 @@
             
                 </v-text-field>
                  <v-row>
-                    <v-col cols="6">
+                    <v-col cols="6" sm="6">
               
                         <v-row
                         class="ma-5"
@@ -55,7 +54,7 @@
                         </v-row>
                   
                     </v-col>    
-                    <v-col cols="6">
+                    <v-col cols="6" sm="6">
                     <v-row
                         class="ma-5 pt-4"
                         align="center"
