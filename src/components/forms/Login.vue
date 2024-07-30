@@ -52,8 +52,11 @@
                         align="center"
                         justify="start">
                         <v-checkbox 
-                        class="text-caption text--small text--md"
-                        label="Remember Me"></v-checkbox>
+                        class="text-xs-caption"
+                        label="Remember Me">
+
+                        </v-checkbox>
+                       
                             <!-- NESTED V_ROW START -->
                             <v-row 
                             class="mr-5"
@@ -113,6 +116,7 @@
 .cursor-pointer {
   cursor: pointer;
 }
+
 
 </style>
 
