@@ -34,11 +34,16 @@ const theme = useTheme()
 const isDark = ref(theme.global.current.value.dark)
 
 function toggleTheme() {
+
+    const delay = 200
     isDark.value = !isDark.value
-    theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
+    setTimeout(() =>{
+        theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
+
+    }, delay);
+
 }
   
-
 </script>
   
 <script>

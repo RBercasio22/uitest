@@ -10,6 +10,7 @@
         max-width="500"
         elevation="10"
         
+        
         >
         <h1 class="text-h2 ml-5">Sign Up</h1>
       <v-container>
@@ -35,6 +36,10 @@
           label="Email"
           variant="outlined"
           prepend-inner-icon="mdi-email"
+          :rules="[
+                    v => !!v || 'E-mail is required',
+                    v => /.+@.+\..+/.test(v) || 'E-mail must be valid'
+                  ]"
         ></v-text-field>
   
         <v-text-field

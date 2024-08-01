@@ -46,6 +46,12 @@
                     variant="outlined"
                     class="ml-5 mr-5"
                     v-model="username"
+                    :rules="[
+                            v => !!v || 'E-mail is required',
+                            v => /.+@.+\..+/.test(v) || 'E-mail must be valid'
+                        ]"
+                                        
+                   
                 ></v-text-field>
                 
                 <v-text-field
@@ -83,7 +89,7 @@
                                 rel="noopener noreferrer"
                                 target="_blank"
                                 >
-                                Forgot login password?
+                                Reset Password
                                 </a>
                             </v-row>
                             <!-- NESTED V_ROW END -->

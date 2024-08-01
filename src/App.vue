@@ -37,26 +37,33 @@
         <router-view />
       </v-main>
     </v-app>
-  </template>
-  
+</template>
+
 
 <script setup>
-import {ref} from 'vue'
+import { ref } from 'vue'
 import { useTheme } from 'vuetify';
 
 const theme = useTheme()
 const isDark = ref(theme.global.current.value.dark)
 
 function toggleTheme() {
-    isDark.value = !isDark.value
-    theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
-}
-    
-</script>
 
+    const delay = 200
+    isDark.value = !isDark.value
+    setTimeout(() =>{
+        theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
+
+    }, delay);
+
+}
+  
+</script>
+  
 <script>
 import router from './router';
   
+
 export default {
   router,
     computed: {
