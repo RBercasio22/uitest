@@ -1,11 +1,15 @@
 <template>
-    <v-cols cols="12"
-     sm="6"
+
+    <v-container
+     md="6"
+    
     >
+    
         <v-card
         class="mx-auto ma-5 pa-5 flex-sm-0-1-100"
         max-width="500"
-     
+        elevation="10"
+        
         >
         <h1 class="text-h2 ml-5">Sign Up</h1>
       <v-container>
@@ -43,28 +47,23 @@
           prepend-inner-icon="mdi-lock"
         ></v-text-field>
   
-        <v-checkbox
-          v-model="terms"
-          color="secondary"
-          label="I agree to site terms and conditions"
-        ></v-checkbox>
       </v-container>
+      <v-row
+      align="center"
+      justify="end"
+      class="mr-5 mb-5"
+      >
+      <v-btn color="success">
+        SIGNUP
+      </v-btn>
+
+      </v-row>
+
   
-      <v-divider></v-divider>
-  
-      <v-card-actions>
-        <v-spacer></v-spacer>
-  
-        <v-btn color="success">
-          Complete Registration
-  
-          <v-icon icon="mdi-chevron-right" end></v-icon>
-        </v-btn>
-      </v-card-actions>
     </v-card>
 
-    </v-cols>
-    
+    </v-container>
+ 
 </template>
 
 <script>

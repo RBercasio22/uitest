@@ -1,21 +1,31 @@
 <template>
-    <v-container>
-        <v-row>
+
+    <v-container
+    
+
+    >
+        <!-- <v-spacer></v-spacer> -->
+        <v-row
+        
+        >
             <!-- change from md to sm -->
-            <v-col cols="12" sm="6">
-                <v-sheet 
+            <v-col cols="12" md="6">
+                <v-card 
                 class="pt-4 pl-4"
                 height="550"
+                elevation="10"
+               
                 >
                 <About />
-            </v-sheet>
+            </v-card>
             </v-col>
-            <v-col cols="12" sm="6">
-                 <!-- V-SHEET START -->
+            <v-col cols="12" md="6">
+                 <!-- V-CARD START -->
                 <v-card
                  class="pa-4 mx-auto"
                  height="550"
-                
+                 elevation="10"
+                 
                  >
                  <v-row align="center" justify="center" class="mb-4 mt-3">
                     <v-icon size="100">mdi-account</v-icon>
@@ -35,6 +45,7 @@
                     prepend-inner-icon="mdi-email"
                     variant="outlined"
                     class="ml-5 mr-5"
+                    v-model="username"
                 ></v-text-field>
                 
                 <v-text-field
@@ -44,6 +55,7 @@
                     :type="visible ? 'text': 'Password'"
                     variant="outlined"
                     class="ml-5 mr-5"
+                    v-model="password"
                     @click:append-inner="visible = !visible"
                 >
                 </v-text-field>
@@ -104,8 +116,12 @@
                   justify="end" 
                   >
                      <v-btn 
-                     prepend-icon="mdi-login"
-                     color="red">LOGIN</v-btn>
+                        prepend-icon="mdi-login"
+                        color="red"
+                        @click="handleLogin">
+                        LOGIN
+                      </v-btn>
+        
                  </v-row>
 
                  <!-- V-SHEET END -->
@@ -113,7 +129,6 @@
                 
             </v-col>
         </v-row>
-    
     </v-container>
 
 </template>
@@ -123,18 +138,6 @@
   cursor: pointer;
 }
 
-/* .div-container {
-    display: flex;
-    flex-direction: row;
-    border: 1px solid red;
-}
-@media (max-width: 600px) {
-    .div-container {
-        flex-direction: column;
-    }
-
-
-} */
 
 </style>
 
@@ -142,6 +145,34 @@
 export default {
     data: () => ({
         visible: false,
-    })
+        username: '',
+        password: '',
+
+    }),
+//     methods: {
+//         handleLogin() {
+//             if(this.username == 'admin' && this.password == 'admin'){
+//                 alert("Login Successful")
+//             }
+//             else {
+//                 alert("Login Failed")
+//             }
+//         }
+      
+//     }
+
+// };
+methods: {
+    handleLogin() {
+      // Simulate authentication
+      if (this.username === 'admin' && this.password === 'admin') {
+        localStorage.setItem('authToken', 'your-token'); // Store token
+        this.$router.push('/dashboard'); // Redirect to dashboard
+        alert('Login Successful');
+      } else {
+        alert('Login Failed');
+      }
+    }
+  }
 };
 </script>

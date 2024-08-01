@@ -9,3 +9,15 @@ Add a remember me function to save user login -
 
 
 
+Task 08/01/2024
+Remove nav bar in parent class App.vue - DONE
+Create a Dashboard page - DONE
+Code refactoring - 40% in In progress
+Implement basic auth for user login - DONE
+
+FOR TESTING
+----------------------------------
+Email: admin
+Pass: admin
+----------------------------------
+
