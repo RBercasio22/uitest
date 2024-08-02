@@ -4,6 +4,18 @@
     
 
     >
+     <!-- Add the loader here -->
+     <v-dialog v-model="loading" persistent width="100">
+        <v-progress-circular
+        color="amber"
+        indeterminate
+        :size="100"
+        :width="40"
+        >
+        </v-progress-circular>
+     
+    </v-dialog>
+
         <!-- <v-spacer></v-spacer> -->
         <v-row
         
@@ -51,7 +63,6 @@
                             v => /.+@.+\..+/.test(v) || 'E-mail must be valid'
                         ]"
                                         
-                   
                 ></v-text-field>
                 
                 <v-text-field
@@ -153,6 +164,7 @@ export default {
         visible: false,
         username: '',
         password: '',
+        loading: false,
 
     }),
 //     methods: {
@@ -169,14 +181,40 @@ export default {
 
 // };
 methods: {
-    handleLogin() {
-      // Simulate authentication
+//     handleLogin() {
+//       this.loading = true; // Show the loader
+//       setTimeout(() => { // Simulate an authentication delay
+//         if (this.username === 'admin' && this.password === 'admin') {
+//           localStorage.setItem('authToken', 'your-token'); // Store token
+//           this.$router.push('/dashboard'); // Redirect to dashboard
+//         //   alert('Login Successful');
+//         } else {
+//           alert('Login Failed');
+//         }
+//         this.loading = false; // Hide the loader
+//       }, 1000); // Adjust the delay as needed
+//     }
+//   }
+handleLogin() {
+    if (!this.username.trim() || !this.password.trim()) {
+        alert('Hindi kumpleto input mo');
+        return;
+    }
+      // Check if credentials are valid first
       if (this.username === 'admin' && this.password === 'admin') {
-        localStorage.setItem('authToken', 'your-token'); // Store token
-        this.$router.push('/dashboard'); // Redirect to dashboard
-        alert('Login Successful');
-      } else {
-        alert('Login Failed');
+        // Show the loader
+        this.loading = true;
+        
+        // Simulate an authentication delay
+        setTimeout(() => {
+          localStorage.setItem('authToken', 'your-token'); // Store token
+          this.$router.push('/dashboard'); // Redirect to dashboard
+          this.loading = false; // Hide the loader
+        }, 1000); // Adjust the delay as needed
+      } 
+      else {
+        // If credentials are invalid, show an alert without showing the loader
+        alert('Invalid Username or password');
       }
     }
   }
