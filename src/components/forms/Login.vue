@@ -2,15 +2,14 @@
 
     <v-container
     
-
     >
      <!-- Add the loader here -->
      <v-dialog v-model="loading" persistent width="100">
         <v-progress-circular
-        color="amber"
+        color="pink"
         indeterminate
         :size="100"
-        :width="40"
+        :width="45"
         >
         </v-progress-circular>
      
@@ -210,7 +209,7 @@ handleLogin() {
           localStorage.setItem('authToken', 'your-token'); // Store token
           this.$router.push('/dashboard'); // Redirect to dashboard
           this.loading = false; // Hide the loader
-        }, 1000); // Adjust the delay as needed
+        }, 8000); // Adjust the delay as needed
       } 
       else {
         // If credentials are invalid, show an alert without showing the loader
