@@ -7,8 +7,6 @@ Add a route of login and signup form - DONE
 Add a remember me function to save user login -
 
 
-
-
 Task 08/01/2024
 Remove nav bar in parent class App.vue - DONE
 Create a Dashboard page - DONE
@@ -21,3 +19,6 @@ Email: admin
 Pass: admin
 ----------------------------------
 
+Task 08/02/2024
+Implement loading when user login - DONE
+Change Dashboard UI - DONE
