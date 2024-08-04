@@ -18,28 +18,7 @@ import { routes } from 'vue-router/auto-routes'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  // routes: [
-  //   { 
-  //     name: 'login',
-  //     path: '/',
-  //     component: Login
 
-  //   },
-  //   { 
-  //     name: 'signup',
-  //     path: '/signup',
-  //     component: SignUp
-
-  //   },
-  //   { 
-  //     name: 'dashboard',
-  //     path: '/dashboard',
-  //     component: Dashboard
-
-  //   },
-   
-
-  // ]
   // GUMAGANA YUNG TESTING
   routes: [
     { path: '/', component: Login, meta: { showAppBar: true } },
@@ -55,15 +34,6 @@ const router = createRouter({
       ]
      }, // No app bar for dashboard
     
-
-    // { path: '/scan', component: ScanContent,
-    //   //CHILD CLASS
-    //   children: [
-    //     { path: 'file', component: ScanFileUpload},
-    //     { path: 'url', component: ScanUrlContent},
-    //     { path: 'search', component: ScanSearch},
-    //   ]
-    //  },
   ]
 
 
