@@ -136,9 +136,9 @@ const isDark = ref(theme.global.current.value.dark)
 // Define the menu items with names, icons, and optional hrefs
 const links = [
   // { name: 'profile', icon: 'mdi-account', href: '/profile' },
-  { name: 'messages', icon: 'mdi-message', href: '/messages' },
-  { name: 'job Post', icon: 'mdi-briefcase', href: '/job-post' },
-  { name: 'notifications', icon: 'mdi-bell', href: '/notifications' }
+  { name: 'messages', icon: 'mdi-message', href: 'messages' },
+  { name: 'job Post', icon: 'mdi-briefcase', href: 'job-post' },
+  { name: 'notifications', icon: 'mdi-bell', href: 'notifications' }
 ]
 
 const icons = [
