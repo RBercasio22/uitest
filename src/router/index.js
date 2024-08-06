@@ -28,9 +28,9 @@ const router = createRouter({
       //CHILD ROUTE
       children: [
         // { path: '/profile', component: Profile},
-        { path: '/messages', component: Scroller},
-        { path: '/job-post', component: JobPosting},
-        { path: '/notifications', component: Scroller}
+        { path: 'messages', component: Scroller},
+        { path: 'job-post', component: JobPosting},
+        { path: 'notifications', component: Scroller}
 
       ]
      }, // No app bar for dashboard
