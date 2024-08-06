@@ -24,7 +24,9 @@ const router = createRouter({
     { path: '/', component: Login, meta: { showAppBar: true } },
     { path: '/signup', component: SignUp, meta: { showAppBar: true } },
     // { path: '/dashboard', component: Dashboard, meta: { showAppBar: false },
-    { path: '/dashboard', component:,
+    { path: '/dashboard', 
+     component: Dashboard,
+      meta: { showAppBar: false },
       //CHILD ROUTE
       children: [
         // { path: '/profile', component: Profile},
@@ -33,7 +35,7 @@ const router = createRouter({
         { path: 'notifications', component: Scroller}
 
       ],
-     meta: { showAppBar: false }
+    
      }, // No app bar for dashboard
     
   ]
