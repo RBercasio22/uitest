@@ -24,7 +24,7 @@ const router = createRouter({
     { path: '/', component: Login, meta: { showAppBar: true } },
     { path: '/signup', component: SignUp, meta: { showAppBar: true } },
     // { path: '/dashboard', component: Dashboard, meta: { showAppBar: false },
-    { path: '/dashboard', 
+    { path: '/dashboard/', 
      component: Dashboard,
       meta: { showAppBar: false },
       //CHILD ROUTE
