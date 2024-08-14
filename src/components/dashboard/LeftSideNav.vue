@@ -1,6 +1,13 @@
 <template>
     
-    <v-list-item title="My Application" subtitle="Vuetify"></v-list-item>
+    <!-- <v-list-item title="" subtitle="">
+        <v-icon color="red" size="70">mdi-microsoft-xbox</v-icon>
+    </v-list-item> -->
+    <div class="text-h4" justify="center" align="center">
+        <v-icon color="red" size="80">mdi-microsoft-azure</v-icon>
+        Z-App
+    </div>
+   
     <v-divider></v-divider>
    
     <v-list-item 

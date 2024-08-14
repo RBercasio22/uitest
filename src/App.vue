@@ -4,11 +4,17 @@
       <v-app-bar
         v-if="showAppBar"
         :elevation="0"
-        color="red-darken-4"
+        color="blue-grey-darken-4"
       >
         <v-app-bar-title>
-          <v-icon size="50">mdi-broadcast</v-icon>
+          <div class="text-h4" justify="center" align="start">
+            <v-icon color="red" size="80">mdi-microsoft-azure</v-icon>
+            Z-App
+          </div>
+          
+        
         </v-app-bar-title>
+        
         <v-btn
          color="white" 
          elevation="1" 

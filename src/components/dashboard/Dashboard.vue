@@ -3,7 +3,7 @@
     <v-navigation-drawer v-model="drawer"
     color="blue-grey-darken-4"
     width="300"
-    class="pa-6">
+    class="pa-4">
 
     <LeftSideNav />
    
