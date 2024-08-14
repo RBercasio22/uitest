@@ -27,14 +27,47 @@
 
 <script setup>
 import { ref } from 'vue'
-import LeftSideNav from './LeftSideNav.vue';
-import DashboardContent from './DashboardContent.vue';
+import { useTheme } from 'vuetify';
 
-const drawer = ref(null)
-
-
+const theme = useTheme()
+const isDark = ref(theme.global.current.value.dark)
 
 
+
+
+// Define the menu items with names, icons, and optional hrefs
+const links = [
+  // { name: 'profile', icon: 'mdi-account', href: '/profile' },
+  { name: 'messages', icon: 'mdi-message', href: '/messages' },
+  { name: 'job Post', icon: 'mdi-briefcase', href: '/job-post' },
+  { name: 'notifications', icon: 'mdi-bell', href: '/notifications' }
+]
+
+const icons = [
+  'mdi-facebook',
+  'mdi-twitter',
+  'mdi-linkedin',
+  'mdi-github',
+  'mdi-slack'
+]
+
+const social = [
+  'https://facebook.com',
+  'https://twitter.com',
+  'https://www.linkedin.com/in/devnetrb',
+  'https://github.com',
+  'https://slack.com'
+]
+
+
+
+function toggleTheme() {
+  const delay = 200
+  isDark.value = !isDark.value
+  setTimeout(() => {
+    theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
+  }, delay);
+}
 
 
 
