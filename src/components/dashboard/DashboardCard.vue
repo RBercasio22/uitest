@@ -17,7 +17,7 @@
 
 <script setup>
 
-import { ref, computed } from 'vue'
+// import { ref, computed } from 'vue'
 import { defineProps } from 'vue';
 
 // const income = ref(12900)
