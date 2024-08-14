@@ -3,8 +3,10 @@
     <v-navigation-drawer v-model="drawer"
     color="blue-grey-darken-4"
     width="300"
-    class="pa-4">
-
+    class="pa-4"
+   
+     
+    >
     <LeftSideNav />
    
    
@@ -26,55 +28,37 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import { useTheme } from 'vuetify';
-
-const theme = useTheme()
-const isDark = ref(theme.global.current.value.dark)
+// import { ref } from 'vue'
+// import { useTheme } from 'vuetify';
 
 
 
 
-// Define the menu items with names, icons, and optional hrefs
-const links = [
-  // { name: 'profile', icon: 'mdi-account', href: '/profile' },
-  { name: 'messages', icon: 'mdi-message', href: '/messages' },
-  { name: 'job Post', icon: 'mdi-briefcase', href: '/job-post' },
-  { name: 'notifications', icon: 'mdi-bell', href: '/notifications' }
-]
-
-const icons = [
-  'mdi-facebook',
-  'mdi-twitter',
-  'mdi-linkedin',
-  'mdi-github',
-  'mdi-slack'
-]
-
-const social = [
-  'https://facebook.com',
-  'https://twitter.com',
-  'https://www.linkedin.com/in/devnetrb',
-  'https://github.com',
-  'https://slack.com'
-]
+// const theme = useTheme()
+// const isDark = ref(theme.global.current.value.dark)
 
 
 
-function toggleTheme() {
-  const delay = 200
-  isDark.value = !isDark.value
-  setTimeout(() => {
-    theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
-  }, delay);
-}
-
+// function toggleTheme() {
+//   const delay = 200
+//   isDark.value = !isDark.value
+//   setTimeout(() => {
+//     theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
+//   }, delay);
+// }
 
 
 </script>
 
 <script>
+
   export default {
     data: () => ({ drawer: null }),
+    
   }
+
+
+
+  
+
 </script>

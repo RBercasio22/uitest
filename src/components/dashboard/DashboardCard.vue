@@ -1,8 +1,12 @@
 <template>
-    <v-card class="mx-auto rounded-xl bg-grey-lighten-3" max-width="500" border flat>
+    <v-card class="mx-auto rounded-xl bg-grey-lighten-3" max-width="600" border flat>
       <v-list-item class="px-6" height="40">
         <template v-slot:prepend>
-          <v-icon color="purple" size="40">mdi-bank</v-icon>
+          <!-- Gumamit ako ng v-bind para mabind ko yung color :color -->
+          <v-avatar rounded="2" class="mt-3" :color="color"> 
+            <v-icon color="white" size="20">{{ icon }}</v-icon>
+          </v-avatar>
+          
         </template>
       </v-list-item>
   
@@ -20,16 +24,16 @@
 // import { ref, computed } from 'vue'
 import { defineProps } from 'vue';
 
-// const income = ref(12900)
+
 
 const props = defineProps({
   title: String,
+  icon: String,
+  color: String,
   display: String
 });
 
-// const display = computed(() => {
-//     return income.value.toLocaleString();
-// })
+
 
 
 
