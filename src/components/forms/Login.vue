@@ -2,7 +2,7 @@
   <v-container fluid>
     <!-- Add the loader here -->
     <v-dialog v-model="loading" persistent width="100">
-      <v-progress-circular color="pink" indeterminate :size="100" :width="45">
+      <v-progress-circular color="pink" indeterminate :size="50" :width="30">
       </v-progress-circular>
     </v-dialog>
 
@@ -162,7 +162,7 @@ export default {
           localStorage.setItem("authToken", "your-token"); // Store token
           this.$router.push("/dashboard"); // Redirect to dashboard
           this.loading = false; // Hide the loader
-        }, 8000); // Adjust the delay as needed
+        }, 1000); // Adjust the delay as needed
       } else {
         // If credentials are invalid, show an alert without showing the loader
         alert("Invalid Username or password");
