@@ -17,16 +17,15 @@
      <v-container>
         <!-- <v-container class="bg-grey-lighten-5 rounded-xl"> -->
             <v-row>
-                <v-col cols="12" sm="6">
+                <v-col cols="12" sm="8">
                     <v-container class="bg-grey-lighten-5 rounded-xl">
-                       <NewsPage />
+                       <RecentInvoice />
                     </v-container>
                 </v-col>
-                <v-col cols="12" sm="6">
+                <v-col cols="12" sm="4">
                     <v-container class="bg-grey-lighten-5 rounded-xl">
-                        <RecentInvoice />
+                        <NewsPage />
                     </v-container>
-                        
                 </v-col>
             </v-row>
         <!-- </v-container> -->
