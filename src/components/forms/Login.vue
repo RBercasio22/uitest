@@ -2,7 +2,7 @@
   <v-container fluid>
     <!-- Add the loader here -->
     <v-dialog v-model="loading" persistent width="100">
-      <v-progress-circular color="pink" indeterminate :size="50" :width="30">
+      <v-progress-circular color="pink" indeterminate :size="100" :width="50">
       </v-progress-circular>
     </v-dialog>
 
@@ -65,24 +65,6 @@
               </v-row>
             </v-col>
 
-            <!-- FORGOT PASSWORD LINK -->
-            <!-- <v-col cols="6" sm="6">
-                    <v-row
-                        class="mr-4 pt-4"
-                        align="center"
-                        justify="end"
-                        >
-                        <a
-                        class="text-caption text-decoration-none text-red"
-                        href="#"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        >
-                        Forgot login password?
-                        </a>
-
-                    </v-row>
-                    </v-col>   -->
           </v-row>
 
           <v-row class="mb-1 mr-5" align="center" justify="end">
@@ -119,19 +101,7 @@ export default {
     password: "",
     loading: false,
   }),
-  //     methods: {
-  //         handleLogin() {
-  //             if(this.username == 'admin' && this.password == 'admin'){
-  //                 alert("Login Successful")
-  //             }
-  //             else {
-  //                 alert("Login Failed")
-  //             }
-  //         }
-
-  //     }
-
-  // };
+ 
   methods: {
     //     handleLogin() {
     //       this.loading = true; // Show the loader
