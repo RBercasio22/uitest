@@ -1,12 +1,15 @@
 <template>
+
     <v-card>
-      <v-data-iterator
-        :items="games"
-        :items-per-page="3"
-        :search="search"
-      >
+      
+        <v-data-iterator
+          :items="games"
+          :items-per-page="3"
+          :search="search"
+        >
+
         <template v-slot:header>
-          <v-toolbar class="px-2">
+          <v-toolbar class="px-2 bg-grey-lighten-5">
             <v-text-field
               v-model="search"
               density="comfortable"
@@ -18,8 +21,9 @@
               hide-details
             ></v-text-field>
           </v-toolbar>
+    
         </template>
-  
+   
         <template v-slot:default="{ items }">
           <v-container class="pa-2" fluid>
             <v-row dense>

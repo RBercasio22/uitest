@@ -1,5 +1,5 @@
 <template>
-    <v-container class="bg-grey-lighten-3">
+    <!-- <v-container class="bg-grey-lighten-3"> -->
     <!-- 1st Column -->
     <v-container>
         <v-container class="bg-grey-lighten-5 rounded-xl">
@@ -30,11 +30,10 @@
             </v-row>
         <!-- </v-container> -->
 
-
      </v-container>
 
      <!-- Closing Container -->
- </v-container>
+ <!-- </v-container> -->
 
   </template>
   
